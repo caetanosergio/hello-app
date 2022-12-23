@@ -27,7 +27,7 @@ text = my_bible.search("Genesis", 1, 1)
 
 channel2 = f"{text}"
 
-st.write("Choose the verse", text)
+st.write("Genesis 1:1", text)
 
 st.button("Click here")
 

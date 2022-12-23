@@ -23,7 +23,7 @@ st.write("Choose the verse", channel)
 
 name = st.text_input("Enter the Bible name", "Bible Name")
 
-option = st.selectbox("select the book", channel)
+option = st.selectbox("select the book", t)
 
 st.write("You Selected", option)
 

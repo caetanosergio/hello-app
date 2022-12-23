@@ -22,9 +22,6 @@ st.write("Subscribe to my channel", channel)
 
 name = st.text_input("Enter the Bible name", "Bible Name")
 
-book, chapter, verse = name.split(name)
-
-text = my_bible.search(book, int(chapter), int(verse))
 
 st.button("Click here")
 
@@ -34,4 +31,21 @@ print(t)
 if(st.button("click here")):
     st.text(f"{st.write(text)}")
 
+
+def main():
+    st.title("Handong Holy Bible")
+    menu = ["Home", "MultiVerse", "About"]
+
+    choice = st.sidebar.selectbox("Menu", menu)
+    if choice == "Home":
+        st.subheader("Single Verse Search")
+
+    elif choice == "MultiVerse":
+        st.subheader("MultiVerse Retrieval")
+
+    else:
+        st.subheader("About")
+        
+        
+main()
 

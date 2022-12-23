@@ -10,9 +10,12 @@ my_bible = Bible()
 
 my_bible.init()
 
-st.sucess("Executed successfully")
 st.info("This is an information")
+
 st.warning("This is a warning")
+
 st.error("An error occured")
+
 channel = "iakdskjfdkj"
+
 st.write("Subscribe to my channel", channel)

@@ -49,9 +49,7 @@ def main():
         st.subheader("Single Verse Search")
         
         books = my_bible.book_full_names
-        
         book_names = st.selectbox("select the book", books)
-
         st.write("You Selected", book_names)
 
     elif choice == "MultiVerse":

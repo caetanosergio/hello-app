@@ -21,7 +21,7 @@ channel = f"{t}"
 
 st.write("Choose the verse", channel)
 
-name = st.text_input("Enter the Bible name", "Bible Name")
+name = st.text_input("Enter the Bible name", "The verse of the day is")
 
 text1 = my_bible.search("Genesis", 1, 1)
 text2 = my_bible.search("2 Peter", 1, 10)
@@ -52,6 +52,8 @@ def main():
         
         book_names = st.selectbox("select the book", books)
         st.write("You Selected", book_names)
+        chapter = st.sidebar.number_input("Chapter", 1)
+        verse = st.sidebar.number_input("Verse", 1)
 
     elif choice == "MultiVerse":
         st.subheader("MultiVerse Retrieval")

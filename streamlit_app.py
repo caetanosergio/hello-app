@@ -23,9 +23,9 @@ st.write("Choose the verse", channel)
 
 name = st.text_input("Enter the Bible name", "Bible Name")
 
-option = st.selectbox("select the book", t)
+book_names = st.selectbox("select the book", t)
 
-st.write("You Selected", option)
+st.write("You Selected", book_names)
 
 text1 = my_bible.search("Genesis", 1, 1)
 text2 = my_bible.search("2 Peter", 1, 10)
@@ -46,6 +46,7 @@ if(st.button("click here")):
 def main():
     st.title("Handong Holy Bible")
     menu = ["Home", "MultiVerse", "About"]
+    
 
     choice = st.sidebar.selectbox("Menu", menu)
     if choice == "Home":

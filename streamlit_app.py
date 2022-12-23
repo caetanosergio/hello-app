@@ -51,9 +51,9 @@ def main():
         st.subheader("Single Verse Search")
         
         book_names = st.sidebar.selectbox("select the book", books)
-        st.sidebar.write("You Selected", book_names)
         chapter = st.sidebar.number_input("Chapter", 1)
         verse = st.sidebar.number_input("Verse", 1)
+        st.sidebar.write("You Selected", book_names)
 
     elif choice == "MultiVerse":
         st.subheader("MultiVerse Retrieval")

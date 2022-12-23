@@ -1,8 +1,12 @@
 import streamlit as st
+from PIL import Image
 
 st.write("Alejandra Mollo  21800242")
 
 st.title('Handong Bible App')
+
+img = Image.open("Holy-Bible.JPG")
+st.image(img)
 
 from Bible import Bible
 

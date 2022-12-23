@@ -43,12 +43,13 @@ def main():
     st.title("Handong Holy Bible")
     menu = ["Home", "MultiVerse", "About"]
     
+    books = my_bible.book_full_names
+    
 
     choice = st.sidebar.selectbox("Menu", menu)
     if choice == "Home":
         st.subheader("Single Verse Search")
         
-        books = my_bible.book_full_names
         book_names = st.selectbox("select the book", books)
         st.write("You Selected", book_names)
 

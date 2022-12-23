@@ -3,7 +3,7 @@ import streamlit as st
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.write(' ')
+    st.write('')
 
 with col2:
     st.write("Alejandra Mollo  21800242")
@@ -13,7 +13,7 @@ with col2:
     st.image("Holy-Bible.jpg", width=300)
 
 with col3:
-    st.write(' ')
+    st.write('')
 
 from Bible import Bible
 

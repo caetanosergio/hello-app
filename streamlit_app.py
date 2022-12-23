@@ -23,6 +23,10 @@ st.write("Choose the verse", channel)
 
 name = st.text_input("Enter the Bible name", "Bible Name")
 
+option = st.selectbox("select the book", channel)
+
+st.write("You Selected", option)
+
 text1 = my_bible.search("Genesis", 1, 1)
 text2 = my_bible.search("2 Peter", 1, 10)
 text3 = my_bible.search("Revelation", 2, 22)
@@ -30,6 +34,8 @@ text3 = my_bible.search("Revelation", 2, 22)
 channel2 = f"\n\n{text1}\n\n{text2}\n\n{text3}\n"
 
 st.write("The books are:", channel2)
+
+
 
 st.button("Click here")
 

@@ -29,7 +29,7 @@ t = my_bible.book_full_names
 print(t)
 
 if(st.button("click here")):
-    st.text(f"{st.write(text)}")
+    st.text(f"{st.write(f'{text}')}")
 
 
 def main():

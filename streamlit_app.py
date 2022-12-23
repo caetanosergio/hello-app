@@ -23,16 +23,15 @@ st.write("Choose the verse", channel)
 
 name = st.text_input("Enter the Bible name", "Bible Name")
 
-text = my_bible.search("Genesis", 1, 1)
+text1 = my_bible.search("Genesis", 1, 1)
+text2 = my_bible.search("2 Peter", 1, 10)
+text3 = my_bible.search("Revelation", 2, 22)
 
-channel2 = f"{text}"
+channel2 = f"{text1}\n{text2}\n{text3}"
 
-st.write("Genesis 1:1", text)
+st.write("Genesis 1:1", channel2)
 
 st.button("Click here")
-
-t = my_bible.book_full_names
-print(t)
 
 if(st.button("click here")):
     st.text(f"{st.write(f'{text}')}")

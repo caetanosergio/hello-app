@@ -5,7 +5,7 @@ st.write("Alejandra Mollo  21800242")
 
 st.title('Handong Bible App')
 
-st.image("Holy-Bible.JPG", width=300)
+st.image("Holy-Bible.jpg", width=300)
 
 from Bible import Bible
 

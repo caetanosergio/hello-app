@@ -20,4 +20,18 @@ channel = "iakdskjfdkj"
 
 st.write("Subscribe to my channel", channel)
 
-st.sucess("Executed successfully")
+name = st.text_input("Enter the Bible name", "Bible Name")
+
+book, chapter, verse = name.split(name)
+
+text = my_bible.search(book, int(chapter), int(verse))
+
+st.button("Click here")
+
+t = my_bible.book_full_names
+print(t)
+
+if(st.button("click here")):
+    st.text(f"{st.write(text)}")
+
+

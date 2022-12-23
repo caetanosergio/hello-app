@@ -50,7 +50,7 @@ def main():
     if choice == "Home":
         st.subheader("Single Verse Search")
         
-        book_names = st.selectbox("select the book", books)
+        book_names = st.sidebar.selectbox("select the book", books)
         st.sidebar.write("You Selected", book_names)
         chapter = st.sidebar.number_input("Chapter", 1)
         verse = st.sidebar.number_input("Verse", 1)

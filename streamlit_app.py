@@ -29,7 +29,7 @@ text3 = my_bible.search("Revelation", 2, 22)
 
 channel2 = f"{text1}\n{text2}\n{text3}"
 
-st.write("Genesis 1:1", channel2)
+st.write("The books are:", channel2)
 
 st.button("Click here")
 

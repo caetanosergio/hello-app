@@ -6,7 +6,7 @@ st.write("Alejandra Mollo  21800242")
 st.title('Handong Bible App')
 
 img = Image.open("Holy-Bible.JPG")
-st.image(img)
+st.image(img, "rb")
 
 from Bible import Bible
 

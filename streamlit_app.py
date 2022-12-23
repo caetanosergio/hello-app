@@ -23,6 +23,11 @@ st.write("Choose the verse", channel)
 
 name = st.text_input("Enter the Bible name", "Bible Name")
 
+text = my_bible.search("Genesis", 1, 1)
+
+channel2 = f"{t}"
+
+st.write("Choose the verse", channel2)
 
 st.button("Click here")
 

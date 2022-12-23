@@ -23,10 +23,6 @@ st.write("Choose the verse", channel)
 
 name = st.text_input("Enter the Bible name", "Bible Name")
 
-book_names = st.selectbox("select the book", t)
-
-st.write("You Selected", book_names)
-
 text1 = my_bible.search("Genesis", 1, 1)
 text2 = my_bible.search("2 Peter", 1, 10)
 text3 = my_bible.search("Revelation", 2, 22)
@@ -51,6 +47,10 @@ def main():
     choice = st.sidebar.selectbox("Menu", menu)
     if choice == "Home":
         st.subheader("Single Verse Search")
+        
+        book_names = st.selectbox("select the book", t)
+
+        st.write("You Selected", book_names)
 
     elif choice == "MultiVerse":
         st.subheader("MultiVerse Retrieval")

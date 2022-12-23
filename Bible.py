@@ -207,11 +207,13 @@ class Bible:
         ### Q6) search through the entire Bible,
         ###     find all the verses that includes a givn keyword.
         ###     if not found, return an emtpy list.
-
-        for terms in self.bible.values():
-            words = terms.split()
+        
+        for terms in self.bible.keys():
+            words = self.bible[terms].split()
+            book_verse = f"{self.abbrev2full[terms[0]]} {terms[1]}:{terms[2]}"
             if keyword in words:
-                found.append(terms)
+                found.append(f"{self.bible[terms]}\n\n{book_verse}")
+
 
         ### YOUR CODE ENDS HERE
 

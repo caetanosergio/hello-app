@@ -48,7 +48,9 @@ def main():
     if choice == "Home":
         st.subheader("Single Verse Search")
         
-        book_names = st.selectbox("select the book", t)
+        books = my_bible.book_full_names
+        
+        book_names = st.selectbox("select the book", books)
 
         st.write("You Selected", book_names)
 

@@ -15,8 +15,9 @@ st.info("This is an information")
 st.warning("This is a warning")
 
 st.error("An error occured")
+t = my_bible.book_full_names
 
-channel = "iakdskjfdkj"
+channel = f"{iakdskjfdk}"
 
 st.write("Subscribe to my channel", channel)
 

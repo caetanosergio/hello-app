@@ -26,6 +26,9 @@ st.info("This is an information")
 st.warning("This is a warning")
 
 st.error("An error occured")
+
+st.success("You did it !")
+
 t = my_bible.book_full_names
 
 channel = f"{t}"

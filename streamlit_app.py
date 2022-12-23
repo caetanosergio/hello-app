@@ -29,6 +29,8 @@ st.error("An error occured")
 
 st.success("You did it !")
 
+st.exception(RuntimeError("RuntimeError exception"))
+
 t = my_bible.book_full_names
 
 channel = f"{t}"

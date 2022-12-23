@@ -19,7 +19,7 @@ t = my_bible.book_full_names
 
 channel = f"{t}"
 
-st.write("Subscribe to my channel", channel)
+st.write("Choose the verse", channel)
 
 name = st.text_input("Enter the Bible name", "Bible Name")
 

@@ -27,7 +27,7 @@ text1 = my_bible.search("Genesis", 1, 1)
 text2 = my_bible.search("2 Peter", 1, 10)
 text3 = my_bible.search("Revelation", 2, 22)
 
-channel2 = f"{text1}\n{text2}\n{text3}"
+channel2 = f"\n\n{text1}\n\n{text2}\n\n{text3}\n"
 
 st.write("The books are:", channel2)
 
